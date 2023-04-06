@@ -3,7 +3,7 @@ This leads to low public engagement and participation in charitable events.
 The Problem is that these traditional charity organizations face issues with transparency, accountability and trust because these organizations often have a centralized decision-making structure which can lead to inefficiencies and a lack of community involvement.
 <div align="center">
 <picture>
-<img src="https://github.com/Shubh-Bindal/BC-Project/blob/master/newsClip.png" width="30%">
+<img src="https://github.com/Shubh-Bindal/BC-Project/blob/main/newsClip.png" width="30%">
 </picture>
 </div>
 <h2>SOLUTION</h2> We propose a decentralised Autonomous Organization(DAO) as a solution to our problem.
