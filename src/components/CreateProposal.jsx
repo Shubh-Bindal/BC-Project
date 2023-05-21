@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { setGlobalState, useGlobalState } from '../store'
-// import { raiseProposal } from '../Blockchain.services'
+import { raiseProposal } from '../Blockchain.services'
 import { toast } from 'react-toastify'
 
 const CreateProposal = () => {
@@ -16,7 +16,7 @@ const CreateProposal = () => {
     if (!title || !description || !beneficiary || !amount) return
     const proposal = { title, description, beneficiary, amount }
 
-    // await raiseProposal(proposal)
+    await raiseProposal(proposal)
     toast.success('Proposal created, reloading in progress...')
     closeModal()
   }

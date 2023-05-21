@@ -10,7 +10,7 @@ import {
   Legend,
   Tooltip,
 } from 'recharts'
-import { getProposal, voteOnProposal } from '../Blockchain.services'  
+import { getProposal, voteOnProposal } from '../Blockchain.services'
 import { useGlobalState, daysRemaining } from '../store'
 
 const ProposalDetails = () => {
@@ -42,7 +42,7 @@ const ProposalDetails = () => {
       return
     }
 
-    // await voteOnProposal(id, choice)
+    await voteOnProposal(id, choice)
     toast.success('Voted successfully!')
   }
 

@@ -5,38 +5,10 @@ const { setGlobalState, useGlobalState, getGlobalState } = createGlobalState({
   createModal: 'scale-0',
   connectedAccount: '',
   contract: null,
-  proposals: [
-    {
-      id: '02',
-      title: 'rfgsdg',
-      proposer: 'fgxdfg',
-      duration: 1382000000,
-      paid: 0,
-      upvotes: 213,
-      downvotes: 32
-    },
-    {
-      id: '03',
-      title: 'rfgsdg',
-      proposer: 'mktrtwe',
-      duration: 1681000000,
-      paid: 1,
-      upvotes: 12,
-      downvotes: 328
-    },
-    {
-      id: '05',
-      title: 'rfgsdg',
-      proposer: 'eerwe vbfd',
-      duration: 1891000000,
-      paid: 1,
-      upvotes: 2323,
-      downvotes: 32
-    }
-  ],
-  isStakeholder: true,
-  balance: 120,
-  mybalance: 2,
+  proposals: [],
+  isStakeholder: false,
+  balance: 0,
+  mybalance: 0,
 })
 
 const truncate = (text, startChars, endChars, maxLength) => {

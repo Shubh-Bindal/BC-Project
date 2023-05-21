@@ -6,18 +6,7 @@ import { truncate } from '../store'
 import { listVoters } from '../Blockchain.services'
 
 const Voters = () => {
-  const [voters, setVoters] = useState([
-    {
-      voter: 'kjdskjf',
-      timestamp: 1834422342,
-      choosen: 0
-    },
-    {
-      voter: 'egsdgdf',
-      timestamp: 1923423424,
-      choosen: 1
-    }
-  ])
+  const [voters, setVoters] = useState([])
   const [data, setData] = useState([])
   const { id } = useParams()
 
@@ -169,4 +158,4 @@ const Voters = () => {
   )
 }
 
-export default Voters;
+export default Voters

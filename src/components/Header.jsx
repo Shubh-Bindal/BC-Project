@@ -3,7 +3,7 @@ import { MdLightMode } from 'react-icons/md'
 import { FaUserSecret, FaMoon } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
 import { truncate, useGlobalState } from '../store'
-// import { connectWallet } from '../Blockchain.services'
+import { connectWallet } from '../Blockchain.services'
 
 const Header = () => {
   const [theme, setTheme] = useState(localStorage.theme)
@@ -38,9 +38,9 @@ const Header = () => {
               to={'/'}
               className="flex flex-row justify-start items-center space-x-3"
             >
-              {/* <FaUserSecret className="cursor-pointer" size={25} /> */}
+              <FaUserSecret className="cursor-pointer" size={25} />
               <span className="invisible md:visible dark:text-gray-300">
-                WELCOME
+                Dominion
               </span>
             </Link>
 
@@ -80,7 +80,7 @@ const Header = () => {
                   focus:ring-0 active:bg-blue-800 active:shadow-lg
                   transition duration-150 ease-in-out dark:text-blue-500
                   dark:border dark:border-blue-500 dark:bg-transparent"
-                  // onClick={connectWallet}
+                  onClick={connectWallet}
                 >
                   Connect Wallet
                 </button>
